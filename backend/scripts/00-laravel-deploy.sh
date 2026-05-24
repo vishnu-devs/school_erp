@@ -5,8 +5,8 @@ php artisan route:cache
 php artisan view:cache
 
 echo "Running migrations..."
-# Run migrations with a fallback so that Nginx still boots even if the database is not configured yet
-if php artisan migrate --force; then
+# Run migrations with --force and --no-interaction to prevent hanging on interactive prompts (e.g. "Database does not exist, create it?")
+if php artisan migrate --force --no-interaction; then
     echo "Migrations completed successfully!"
     
     echo "Checking if seeding is required..."
