@@ -19,12 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => array_values(array_unique(array_filter(array_map(function ($url) {
-        return rtrim(trim($url), '/');
-    }, array_merge(
-        ['http://localhost:5173', 'http://localhost:3000'],
-        explode(',', env('FRONTEND_URL', ''))
-    ))))),
+    'allowed_origins' => ['*'],
 
     'allowed_origins_patterns' => [],
 
@@ -34,6 +29,6 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => true,
+    'supports_credentials' => false,
 
 ];
