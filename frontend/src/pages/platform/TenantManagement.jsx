@@ -30,7 +30,7 @@ const TenantManagement = () => {
               <tbody>
                 <tr className="border-b border-slate-800 hover:bg-slate-800/30 transition-colors">
                   <td className="px-6 py-4 font-medium text-white">Greenwood High School</td>
-                  <td className="px-6 py-4 font-mono text-emerald-400">greenwood.schoolites.com</td>
+                  <td className="px-6 py-4 font-mono text-emerald-400">greenwood.codebyvishu.in</td>
                   <td className="px-6 py-4"><span className="px-2 py-1 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded text-xs">Premium</span></td>
                   <td className="px-6 py-4">
                     <span className="px-2 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded text-xs">Active</span>

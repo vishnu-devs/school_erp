@@ -100,7 +100,7 @@ class DatabaseSeeder extends Seeder
         // 2. Create the SUPER ADMIN (Owner of the SaaS platform, NOT linked to any school)
         $superAdmin = User::create([
             'name' => 'Platform Super Admin',
-            'email' => 'admin@schoolites.com',
+            'email' => 'admin@codebyvishu.in',
             'password' => Hash::make('password123'),
             'school_id' => null, // Crucial: Super Admin does not belong to a school
         ]);

@@ -36,12 +36,12 @@ Create the following custom WAF rules:
 - **Auth Endpoints (`/api/login`, `/api/register`):** Allow 5 requests per 1 minute per IP. Block for 1 hour.
 
 ## 4. Page Rules
-- **Rule 1: `*schoolites.com/api/*`**
+- **Rule 1: `*codebyvishu.in/api/*`**
   - Cache Level: Bypass
   - Disable Performance Features
   - *Reason:* APIs should never be cached to prevent serving stale or cross-user data.
 
-- **Rule 2: `*schoolites.com/*`**
+- **Rule 2: `*codebyvishu.in/*`**
   - Cache Level: Cache Everything
   - Edge Cache TTL: 2 hours
   - *Reason:* Cache the React frontend aggressively.

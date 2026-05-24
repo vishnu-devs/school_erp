@@ -13,9 +13,9 @@ class LicenseMiddleware
     protected $authorizedDomains = [
         'localhost',
         '127.0.0.1',
-        'schoolites.com',
-        'api.schoolites.com',
-        'app.schoolites.com',
+        'codebyvishu.in',
+        'api.codebyvishu.in',
+        'app.codebyvishu.in',
     ];
 
     /**
@@ -26,12 +26,14 @@ class LicenseMiddleware
     {
         $host = $request->getHost();
 
-        // Enforce Domain Binding
-        if (!in_array($host, $this->authorizedDomains)) {
+        // Enforce Domain Binding (allow localhost, Aiven, Render subdomains, or authorized domains)
+        $isAuthorized = in_array($host, $this->authorizedDomains) || str_ends_with($host, '.onrender.com');
+
+        if (!$isAuthorized) {
             return response()->json([
                 'error' => 'ILLEGAL USAGE DETECTED',
                 'message' => 'This software instance is unlicensed or pirated. Unauthorized redistribution is strictly prohibited under international copyright laws.',
-                'contact' => 'legal@schoolites.com'
+                'contact' => 'hello@codebyvishu.in'
             ], 451); // 451 Unavailable For Legal Reasons
         }
 

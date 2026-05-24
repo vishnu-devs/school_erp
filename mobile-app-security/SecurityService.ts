@@ -57,14 +57,14 @@ class SecurityService {
      */
     static async secureApiRequest(endpoint: string, method = 'GET', body = null) {
         const token = await this.getSecureToken('auth_token');
-        const url = `https://api.schoolites.com${endpoint}`;
+        const url = `https://api.codebyvishu.in${endpoint}`;
 
         return fetch(url, {
             method: method,
             timeoutInterval: 10000, 
             body: body ? JSON.stringify(body) : '',
             sslPinning: {
-                certs: ["schoolites_cert"] // Public key certificate stored in native bundle
+                certs: ["codebyvishu_cert"] // Public key certificate stored in native bundle
             },
             headers: {
                 Accept: 'application/json',
