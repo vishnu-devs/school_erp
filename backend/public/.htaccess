@@ -1,0 +1,46 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Enterprise Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    
+    # Hide PHP version
+    Header always unset X-Powered-By
+    Header unset X-Powered-By
+</IfModule>
+
+# Block access to sensitive files and directories
+<FilesMatch "^\.env|composer\.json|package\.json|phpunit\.xml|\.git|\.htaccess|\.htpasswd">
+    Require all denied
+</FilesMatch>
+
+# Block access to logs and storage
+RewriteRule ^storage/logs/ - [F,L]
+RewriteRule ^storage/app/private/ - [F,L]
+
+# Prevent script execution in public uploads directory
+<Directory "storage/app/public">
+    <FilesMatch "\.(php|phtml|php3|php4|php5|pl|py|jsp|asp|html|htm|shtml|sh|cgi)$">
+        Require all denied
+    </FilesMatch>
+</Directory>
