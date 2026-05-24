@@ -129,7 +129,7 @@ const Register = () => {
                                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                             <Building2 className="h-5 w-5 text-slate-400" />
                                         </div>
-                                        <input name="school_name" type="text" required value={formData.school_name} onChange={handleChange} className="pl-10 block w-full rounded-xl border-slate-300 bg-slate-50 border py-3 text-slate-900 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm transition-colors" placeholder="e.g. Greenwood High" />
+                                        <input name="school_name" type="text" required value={formData.school_name} onChange={handleChange} className="pl-10 block w-full rounded-xl border-slate-300 bg-slate-50 border py-3 text-slate-900 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm transition-colors" placeholder="e.g. CodeByVishu School" />
                                     </div>
                                 </div>
 
@@ -165,7 +165,7 @@ const Register = () => {
                                         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                             <Mail className="h-5 w-5 text-slate-400" />
                                         </div>
-                                        <input name="email" type="email" required value={formData.email} onChange={handleChange} className="pl-10 block w-full rounded-xl border-slate-300 bg-slate-50 border py-3 text-slate-900 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm transition-colors" placeholder="admin@greenwood.edu" />
+                                        <input name="email" type="email" required value={formData.email} onChange={handleChange} className="pl-10 block w-full rounded-xl border-slate-300 bg-slate-50 border py-3 text-slate-900 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm transition-colors" placeholder="admin@codebyvishu.in" />
                                     </div>
                                 </div>
 

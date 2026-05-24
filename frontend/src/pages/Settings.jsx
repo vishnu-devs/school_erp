@@ -167,7 +167,7 @@ const Settings = () => {
                                     value={settings.school_name}
                                     onChange={(e) => setSettings({...settings, school_name: e.target.value})}
                                     className="w-full bg-slate-50 border-none rounded-2xl px-5 py-3 outline-none focus:ring-2 focus:ring-indigo-100 transition-all font-medium text-slate-700" 
-                                    placeholder="Greenwood High" 
+                                    placeholder="CodeByVishu School" 
                                 />
                             </div>
                             <div className="space-y-2">
@@ -177,7 +177,7 @@ const Settings = () => {
                                     value={settings.email}
                                     onChange={(e) => setSettings({...settings, email: e.target.value})}
                                     className="w-full bg-slate-50 border-none rounded-2xl px-5 py-3 outline-none focus:ring-2 focus:ring-indigo-100 transition-all font-medium text-slate-700" 
-                                    placeholder="admin@greenwood.com" 
+                                    placeholder="admin@codebyvishu.in" 
                                 />
                             </div>
                         </div>
@@ -350,7 +350,7 @@ const Settings = () => {
                                     </div>
                                     <div>
                                         <label className="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-2">Account Name</label>
-                                        <input type="text" value={paymentData.account_name} onChange={e => setPaymentData({...paymentData, account_name: e.target.value})} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-100" placeholder="Greenwood High School" />
+                                        <input type="text" value={paymentData.account_name} onChange={e => setPaymentData({...paymentData, account_name: e.target.value})} className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-100" placeholder="CodeByVishu School" />
                                     </div>
                                     <div>
                                         <label className="text-xs font-bold text-slate-400 uppercase tracking-widest block mb-2">Account Number</label>

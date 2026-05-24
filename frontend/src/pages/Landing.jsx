@@ -61,9 +61,9 @@ const Landing = () => {
                 <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 bg-gradient-to-tr from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-900/35">
-                            <span className="font-black text-xl text-white">S</span>
+                            <span className="font-black text-xl text-white">C</span>
                         </div>
-                        <span className="text-xl font-black bg-gradient-to-r from-white via-slate-100 to-indigo-400 bg-clip-text text-transparent tracking-tight">SCHOOLITES</span>
+                        <span className="text-xl font-black bg-gradient-to-r from-white via-slate-100 to-indigo-400 bg-clip-text text-transparent tracking-tight">CODEBYVISHU</span>
                     </div>
 
                     <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-400">
@@ -235,7 +235,7 @@ const Landing = () => {
             <footer className="border-t border-slate-900 bg-slate-950 py-12 text-slate-500 text-sm">
                 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
                     <div>
-                        <p>© 2026 Schoolites Multi-Tenant SaaS Platform. All Rights Reserved.</p>
+                        <p>© 2026 <a href="https://codebyvishu.in" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 underline font-semibold">CodeByVishu</a> Multi-Tenant SaaS Platform. All Rights Reserved.</p>
                     </div>
                     <div className="flex items-center gap-6">
                         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

@@ -49,8 +49,8 @@ class DatabaseSeeder extends Seeder
             'slug' => 'upi',
             'type' => 'manual',
             'is_active' => true,
-            'instructions' => 'Transfer the plan amount to UPI ID: schoolites@upi. Please enter your transaction UTR reference and upload a screenshot proof below.',
-            'credentials' => ['upi_id' => 'schoolites@upi'],
+            'instructions' => 'Transfer the plan amount to UPI ID: codebyvishu@upi. Please enter your transaction UTR reference and upload a screenshot proof below.',
+            'credentials' => ['upi_id' => 'codebyvishu@upi'],
         ]);
 
         \App\Models\PaymentGateway::create([
@@ -58,12 +58,12 @@ class DatabaseSeeder extends Seeder
             'slug' => 'bank_transfer',
             'type' => 'manual',
             'is_active' => true,
-            'instructions' => 'Deposit the plan amount to HDFC Bank A/C: 50100987654321, IFSC: HDFC0000123, Account Name: Schoolites SaaS. Enter deposit reference and upload receipt.',
+            'instructions' => 'Deposit the plan amount to HDFC Bank A/C: 50100987654321, IFSC: HDFC0000123, Account Name: CodeByVishu SaaS. Enter deposit reference and upload receipt.',
             'credentials' => [
                 'bank_name' => 'HDFC Bank',
                 'account_number' => '50100987654321',
                 'ifsc' => 'HDFC0000123',
-                'account_name' => 'Schoolites SaaS'
+                'account_name' => 'CodeByVishu SaaS'
             ],
         ]);
 
@@ -78,11 +78,11 @@ class DatabaseSeeder extends Seeder
 
         // 1. Create a default school first
         $school = School::create([
-            'school_name' => 'Greenwood High School',
-            'email' => 'contact@greenwood.com',
+            'school_name' => 'CodeByVishu School',
+            'email' => 'hello@codebyvishu.in',
             'phone' => '1234567890',
             'address' => '123 Education Lane',
-            'city' => 'New York',
+            'city' => 'New Delhi',
             'status' => 1,
             'subscription_plan' => 'Basic Plan',
             'subscription_expiry' => now()->addDays(30)->format('Y-m-d'),
@@ -112,7 +112,7 @@ class DatabaseSeeder extends Seeder
         // 3. Create a SCHOOL ADMIN (Linked to the specific school)
         $schoolAdmin = User::create([
             'name' => 'School Principal',
-            'email' => 'principal@greenwood.com',
+            'email' => 'principal@codebyvishu.in',
             'password' => Hash::make('password123'),
             'school_id' => $school->id,
         ]);

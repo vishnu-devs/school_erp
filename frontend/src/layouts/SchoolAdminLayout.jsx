@@ -62,7 +62,7 @@ const SchoolAdminLayout = () => {
                     <div className="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white shrink-0 shadow-lg shadow-indigo-500/20">
                         <span className="font-black text-xl">S</span>
                     </div>
-                    {sidebarOpen && <span className="text-xl font-black text-white tracking-tight uppercase">Schoolites</span>}
+                    {sidebarOpen && <span className="text-xl font-black text-white tracking-tight uppercase">CodeByVishu</span>}
                 </div>
 
                 <nav className="flex-1 space-y-1 overflow-y-auto max-h-[calc(100vh-200px)] scrollbar-thin scrollbar-thumb-slate-850">

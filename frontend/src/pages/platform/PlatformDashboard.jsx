@@ -73,14 +73,14 @@ const PlatformDashboard = () => {
           </CardHeader>
           <CardContent>
              <div className="space-y-4">
-               <div className="flex items-center">
-                  <div className="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center text-xs font-bold border border-emerald-500/50">GW</div>
-                  <div className="ml-4 space-y-1">
-                    <p className="text-sm font-medium leading-none text-white">Greenwood High School</p>
-                    <p className="text-sm text-slate-500">contact@greenwood.com</p>
-                  </div>
-                  <div className="ml-auto font-medium text-emerald-500">Active</div>
-               </div>
+                <div className="flex items-center">
+                   <div className="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center text-xs font-bold border border-emerald-500/50">CVS</div>
+                   <div className="ml-4 space-y-1">
+                     <p className="text-sm font-medium leading-none text-white">CodeByVishu School</p>
+                     <p className="text-sm text-slate-500">hello@codebyvishu.in</p>
+                   </div>
+                   <div className="ml-auto font-medium text-emerald-500">Active</div>
+                </div>
              </div>
           </CardContent>
         </Card>

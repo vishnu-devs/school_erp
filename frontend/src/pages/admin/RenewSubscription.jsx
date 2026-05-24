@@ -164,9 +164,9 @@ const RenewSubscription = () => {
             <header className="border-b border-slate-900 bg-slate-950/80 backdrop-blur-md px-8 py-5 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <div className="w-9 h-9 bg-gradient-to-tr from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                        <span className="font-black text-lg text-white">S</span>
+                        <span className="font-black text-lg text-white">C</span>
                     </div>
-                    <span className="text-lg font-black text-white tracking-tight">SCHOOLITES BILLING</span>
+                    <span className="text-lg font-black text-white tracking-tight">CODEBYVISHU BILLING</span>
                 </div>
                 <button 
                     onClick={handleLogout} 
@@ -450,7 +450,7 @@ const RenewSubscription = () => {
                     </div>
 
                     <div className="pt-4 border-t border-slate-850 text-xs text-slate-550 leading-relaxed font-medium">
-                        Subscriptions will be registered directly onto the Schoolites multi-tenant ledger. All fees collected follow secure compliance and isolated accounting.
+                        Subscriptions will be registered directly onto the CodeByVishu multi-tenant ledger. All fees collected follow secure compliance and isolated accounting.
                     </div>
                 </div>
             </main>

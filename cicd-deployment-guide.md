@@ -33,7 +33,7 @@ jobs:
           username: ${{ secrets.PROD_SSH_USER }}
           key: ${{ secrets.PROD_SSH_KEY }}
           script: |
-            cd /var/www/schoolites-saas
+            cd /var/www/codebyvishu-saas
             git pull origin production
             composer install --no-dev --optimize-autoloader
             php artisan migrate --force

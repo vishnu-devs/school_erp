@@ -3,7 +3,7 @@
 # 1. Project Overview
 
 ## Project Name
-Schoolites Smart School ERP
+CodeByVishu Smart School ERP
 
 ## Project Type
 Multi-Platform School Management System

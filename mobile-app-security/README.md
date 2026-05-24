@@ -21,8 +21,8 @@ useEffect(() => {
 ```
 
 ## 3. SSL Pinning Configuration
-- **Android:** Place your server's certificate (`schoolites_cert.cer`) in `android/app/src/main/assets/`.
-- **iOS:** Add `schoolites_cert.cer` to your Xcode project resources.
+- **Android:** Place your server's certificate (`codebyvishu_cert.cer`) in `android/app/src/main/assets/`.
+- **iOS:** Add `codebyvishu_cert.cer` to your Xcode project resources.
 
 ## 4. Code Obfuscation (Proguard)
 Add the following to `android/app/proguard-rules.pro` to prevent reverse engineering of the APK:
