@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-echo "Running composer install..."
-composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader --working-dir=/var/www/html
-
 echo "Caching Laravel assets..."
 php artisan config:cache
 php artisan route:cache
